@@ -14,26 +14,12 @@ public class PC {
         this.theCase = theCase;
         this.dimensions=dimensions;
     }
-
-
-
-
-
-
-
-    public Motherboard getMotherboard() {
-        return motherboard;
+    public void powerUP(){
+        theCase.pressPowerButton();
+        drawLogo();
     }
-
-    public Resolution getResolution() {
-        return resolution;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    public Case getTheCase() {
-        return theCase;
+    private void drawLogo(){
+        //fancy graphics
+        monitor.drawPixelAt(12,51,"red");
     }
 }

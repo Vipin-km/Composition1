@@ -13,6 +13,10 @@ public class Monitor {
         this.resolution = resolution;
     }
 
+    public void drawPixelAt(int x,int y, String colour){
+        System.out.println("Drawing pixel at" +x+ " ," +y+  "in color" + colour);
+    }
+
     public String getModel() {
         return model;
     }

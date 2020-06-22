@@ -9,11 +9,8 @@ public class Main {
         Monitor monitor=new Monitor("mn-22","hp",20,resolution);
         Case theCase=new Case("cs-121","acer","250W",dimensions);
 	    PC pc = new PC(motherboard,resolution,monitor,theCase, dimensions);
-	    pc.getMotherboard().getModel();
-        System.out.println(pc.getMotherboard().getModel());
-        System.out.println(pc.getMonitor().getModel());
-        System.out.println(pc.getResolution().getHeight());
-        System.out.println(pc.getTheCase().getManufacturer());
+
+        pc.powerUP();
         System.out.println("completed");
     }
 }
