@@ -14,5 +14,6 @@ public class Main {
         System.out.println(pc.getMonitor().getModel());
         System.out.println(pc.getResolution().getHeight());
         System.out.println(pc.getTheCase().getManufacturer());
+        System.out.println("completed");
     }
 }
